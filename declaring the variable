@@ -1,0 +1,26 @@
+#variable block
+#aws region
+variable "region" { 
+    description = "declaring the aws region"
+    type = string
+    default = "us-east-1"
+  
+}
+
+
+#aws instance type
+variable "instance_type" {
+    description = "declaring the default type of instance"
+    type = string
+    default = "t2.micro"  
+}
+
+
+#aws keypair
+variable "instance_keypair" {
+    description = "putting the keypair"
+    type = string
+    default = "terraform-key"
+  
+}
+
